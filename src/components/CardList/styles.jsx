@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CardList = styled.div`
 	display: flex;
 	justify-content: center;
-	background-color: #121212;
+	background-color: #121212eb;
 	width: 100%;
 `;
 
