@@ -5,8 +5,8 @@ function Clock() {
 
 	useEffect(() => {
 		const date = new Date();
-		const hh = date.getHours();
-		const mm = date.getMinutes();
+		let hh = date.getHours();
+		let mm = date.getMinutes();
 
 		if (hh < 10) {
 			hh = '0' + hh;

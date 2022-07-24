@@ -6,7 +6,6 @@ import ContentArea from './components/ContentArea/ContentArea';
 import Loading from './components/Loading/loading';
 export default function App() {
 	const [data, setData] = useState();
-	const [search, setSearch] = useState('');
 	const [city, setCity] = useState();
 
 	async function getWeatherByCoords(lat, lon) {
@@ -35,7 +34,7 @@ export default function App() {
 
 	return (
 		<div>
-			<Header search={search} setSearch={setSearch} />
+			<Header />
 			{data && city ? (
 				<ContentArea data={data} city={city} />
 			) : (
