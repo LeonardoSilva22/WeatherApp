@@ -11,7 +11,7 @@ function ContentArea(props) {
 				</div>
 				<div className="rightSide">
 					<h1>{props.city.name}</h1>
-					<div>
+					<div className="box">
 						<img
 							src={`https://openweathermap.org/img/wn/${props.data.current.weather[0].icon}@2x.png`}
 							alt=""

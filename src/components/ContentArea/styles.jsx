@@ -6,7 +6,7 @@ export const Global = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	height: calc(100vh - 120px);
+	min-height: calc(100vh - 120px);
 `;
 
 export const Container = styled.div`
@@ -31,14 +31,15 @@ export const Container = styled.div`
 			font-size: 70px;
 			word-wrap: break-word;
 		}
-		h2 {
-			font-size: 50px;
-		}
-		div {
+		.box {
 			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
+
+			h2 {
+				font-size: 50px;
+			}
 		}
 	}
 
@@ -49,17 +50,24 @@ export const Container = styled.div`
 
 		h1,
 		h2 {
-			font-size: 50px;
+			font-size: 10px;
 		}
 		.leftSide {
 			flex: 0;
 		}
-		div {
-			width: 100%;
-			justify-content: center;
-		}
-		h2 {
-			text-align: center;
+		.rightSide {
+			h1 {
+				font-size: 60px;
+			}
+			.box {
+				justify-content: center;
+				h2 {
+					font-size: 40px;
+				}
+				img {
+					width: 60px;
+				}
+			}
 		}
 	}
 `;
