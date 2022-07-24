@@ -17,7 +17,7 @@ export const api = {
 	getCurrentLocation: async (lat, lon) => {
 		const city = await axios({
 			method: 'GET',
-			url: `http://api.openweathermap.org/geo/1.0/reverse?`,
+			url: `https://api.openweathermap.org/geo/1.0/reverse?`,
 			params: {
 				lat: lat,
 				lon: lon,
