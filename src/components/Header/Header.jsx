@@ -1,13 +1,21 @@
 import React from 'react';
 import * as c from './styles';
-import { BsSearch } from 'react-icons/bs';
-function Header(prop) {
+import Clock from '../Clock/Clock'
+function Header() {
+
+	const date = new Date().toLocaleDateString()
+
+
 	return (
 		<c.Header>
 			<c.Container>
-				<div>
+				<c.LogoArea>
 					<img src="/img/logo.png" alt="" />
-				</div>
+				</c.LogoArea>
+				<c.DateArea>
+					<small>{date}</small>
+					<Clock className="clock" />
+				</c.DateArea>
 			</c.Container>
 		</c.Header>
 	);

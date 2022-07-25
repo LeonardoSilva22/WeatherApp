@@ -5,6 +5,7 @@ export const CardList = styled.div`
 	justify-content: center;
 	background-color: #121212eb;
 	width: 100%;
+
 `;
 
 export const Container = styled.div`
@@ -14,6 +15,10 @@ export const Container = styled.div`
 	padding: 20px;
 	justify-items: center;
 	align-content: center;
+
+	@media(max-width:375px){
+		padding: 10px;
+	}
 `;
 
 export const Cards = styled.div`

@@ -6,10 +6,7 @@ function ContentArea(props) {
 	return (
 		<c.Global>
 			<c.Container>
-				<div className="leftSide">
-					<Clock />
-				</div>
-				<div className="rightSide">
+				<div className="tempArea">
 					<h1>{props.city.name}</h1>
 					<div className="box">
 						<img

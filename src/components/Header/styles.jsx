@@ -26,3 +26,16 @@ export const Container = styled.div`
 		}
 	}
 `;
+
+export const LogoArea = styled.div`
+
+`
+
+export const DateArea = styled.div`
+	display:flex ;
+	gap: 10px;
+
+	.clock{
+		font-size: 18px;
+	}
+`

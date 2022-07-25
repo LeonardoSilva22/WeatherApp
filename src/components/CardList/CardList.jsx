@@ -4,6 +4,7 @@ import * as c from './styles';
 function CardList(props) {
 	const list = props.cards;
 	list.shift();
+	list.pop();
 	return (
 		<c.CardList>
 			<c.Container>
