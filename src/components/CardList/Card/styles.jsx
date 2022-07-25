@@ -13,6 +13,21 @@ export const Card = styled.div`
 		font-size: 34px;
 	}
 	
+	@media(max-width:700px){
+		min-width: 150px;
+		min-height: 180px;
+		padding:5px ;
+
+		div{
+			font-size: 20px;	
+		}
+		h1{
+			font-size: 24px;
+		}
+		img{
+			width: 60px;
+		}
+	}
 	@media(max-width:375px){
 		min-width: 150px;
 		min-height: 180px;

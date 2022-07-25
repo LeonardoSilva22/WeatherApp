@@ -24,6 +24,7 @@ export const Container = styled.div`
 		h1 {
 			font-size: 70px;
 			word-wrap: break-word;
+			text-shadow: 0px 0px 5px #818181;
 		}
 		.box {
 			width: 100%;
@@ -32,6 +33,7 @@ export const Container = styled.div`
 
 			h2 {
 				font-size: 40px;
+				text-shadow: 0px 0px 5px #818181;
 			}
 			img{
 				width: 70px;
@@ -64,11 +66,25 @@ export const Container = styled.div`
 				flex: 1;
 
 				h2 {
-					font-size: 55px;
+					font-size: 48px;
+					
 				}
 				img {
 					width: 100px;
 					height: 100px;
+				}
+			}
+		}
+	}
+	@media (max-width: 558px){
+		.tempArea{
+			h1{
+				font-size:50px ;
+			}
+
+			.box{
+				h2{
+					font-size: 40px;
 				}
 			}
 		}
